@@ -1,0 +1,292 @@
+ /* Reset some default styles */
+ body,
+ ul,
+ li,
+ a {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     text-decoration: none;
+ }
+
+ .margin {
+     margin-left: 1rem;
+ }
+
+ /* Custom styles for the navigation bar */
+ header {
+     background-color: #333;
+     color: #fff;
+     padding: 10px 0;
+ }
+
+ .container {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .logo {
+     display: flex;
+     align-items: center;
+     color: #fff;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 24px;
+ }
+
+ .logo i {
+     margin-right: 5px;
+ }
+
+ .menu-toggle {
+     display: none;
+ }
+
+ .nav-list {
+     display: flex;
+     list-style: none;
+     align-items: flex-end;
+ }
+
+ .nav-item {
+     margin-right: 20px;
+     position: relative;
+ }
+
+ .nav-link {
+     color: #fff;
+     font-weight: bold;
+     transition: color 0.3s;
+     cursor: pointer;
+ }
+
+ .nav-link:hover {
+     color: #55c500;
+ }
+
+ .nav-item:hover .nav-dropdown {
+     display: block;
+ }
+
+ .nav-dropdown {
+     display: none;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: #333;
+     width: max-content;
+ }
+
+ .nav-dropdown li {
+     margin: 0;
+     padding: 5px 10px;
+ }
+
+ .search-form {
+     display: flex;
+     align-items: center;
+ }
+
+ .search-input {
+     padding: 5px;
+     border: none;
+     border-radius: 5px;
+     margin-right: 10px;
+ }
+
+ .search-button {
+     padding: 5px 10px;
+     background-color: #55c500;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ .description-bar {
+     background-color: #333;
+     color: #fff;
+     padding: 10px;
+     text-align: center;
+ }
+
+ .description-bar a{
+    color: white;
+    text-decoration: none;
+ }
+ .first-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: row;
+ }
+
+ /* Styling for the forward and reverse buttons */
+ .control-buttons {
+     text-align: center;
+     margin-top: 10px;
+ }
+
+ .control-button {
+     background-color: #55c500;
+     color: #fff;
+     border: none;
+     padding: 8px 16px;
+     margin: 0 5px;
+     cursor: pointer;
+     border-radius: 5px;
+ }
+
+ /* Styling for the card container */
+
+ .card-container {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     padding: 20px;
+ }
+
+ /* Styling for individual cards */
+ .card {
+     background-color: #f5f5f5;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     padding: 10px;
+     width: calc(33.33% - 20px);
+     /* 3 cards per row, accounting for gap */
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     margin-bottom: 20px;
+ }
+
+ /* Styling for card images */
+ .card-img {
+     max-width: 100%;
+     height: auto;
+ }
+
+ /* Styling for card text */
+ .card-text {
+     margin-top: 10px;
+     color: #333;
+ }
+
+ footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.rules{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.rules p{
+    margin-left: 2rem;
+}
+/*-------------------------Stream Page---------------------------------------*/
+.headAdd{
+    width: 10rem;
+}
+.vidFrame{
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.metaframe{
+    height: 17rem;
+    width: 30rem;
+}
+
+/*--------------------------servor----------------------------------*/
+.tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+}
+
+.tab {
+    margin-top: 2rem;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+    background-color: #555;
+}
+
+.tab a{
+    text-decoration: none;
+    color: white;
+}
+.server-content {
+    display: none;
+    padding: 20px;
+}
+
+.server-content h2 {
+    color: #333;
+}
+
+.server-content p {
+    color: #666;
+}
+
+.active {
+    display: block;
+}
+
+ /* Media query for responsive behavior */
+ @media screen and (max-width: 768px) {
+     .menu-toggle {
+         display: block;
+         cursor: pointer;
+     }
+
+     .nav-list {
+         display: none;
+         flex-direction: column;
+         position: absolute;
+         top: 50px;
+         left: 0;
+         background-color: #333;
+         width: 100%;
+         text-align: center;
+     }
+
+     .nav-list.active {
+         display: flex;
+     }
+
+     .nav-item {
+         margin: 10px 0;
+     }
+
+     .nav-item:hover .nav-dropdown {
+         display: none;
+     }
+
+     .card {
+         width: calc(50% - 20px);
+         /* 2 cards per row on smaller screens */
+     }
+ }
+
+ @media screen and (max-width: 480px) {
+     .card {
+         width: 100%;
+         /* 1 card per row on even smaller screens */
+     }
+ }

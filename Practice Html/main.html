@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="server-content" href="server.html">
+</head>
+
+<body id="main">
+    <!-- Example Code -->
+    <header>
+        <div class="container">
+            <div class="menu-toggle">&#9776; Menu</div>
+            <ul class="nav-list">
+                <a href="#" class="logo">
+                    <i class="bi bi-tv"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+                        <path
+                            d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z" />
+                    </svg>
+                </a>
+                <li class="nav-item margin">
+                    <a href="#main" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Live TV &#9776;</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="#" class="nav-link">Indian Channel</a></li>
+                        <li><a href="#" class="nav-link">Pakistani Channel</a></li>
+                        <li><a href="#" class="nav-link">Other Country Channel</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Movies TV &#9776;</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="#" class="nav-link">Indian Channel</a></li>
+                        <li><a href="#" class="nav-link">Pakistani Channel</a></li>
+                        <li><a href="#" class="nav-link">Other Country Channel</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">News TV &#9776; </a>
+                    <ul class="nav-dropdown">
+                        <li><a href="#" class="nav-link">Indian Channel</a></li>
+                        <li><a href="#" class="nav-link">Pakistani Channel</a></li>
+                        <li><a href="#" class="nav-link">Other Country Channel</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">More TV &#9776;</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="#" class="nav-link">Indian Channel</a></li>
+                        <li><a href="#" class="nav-link">Pakistani Channel</a></li>
+                        <li><a href="#" class="nav-link">Other Country Channel</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search-form">
+                <input type="text" class="search-input" placeholder="Search">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+        <main>
+            <header>
+                <div class="first-header">
+                    <div class="description-bar">
+                        <h2>Sports Channel</h2>
+                        <i class="bi bi-telegram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                            </svg>
+                        </i>
+                        <a href="https://t.me/gehraiyaan_6">
+                            Join Telegram
+                        </a>
+                    </div>
+
+                    <!-- Forward and Reverse Buttons -->
+                    <div class="control-buttons">
+                        <button class="control-button">&lt;</button>
+                        <button class="control-button">&gt;</button>
+                    </div>
+                </div>
+                <!-- Card Container -->
+                <div class="card-container">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <a href="server.html">
+                            <img class="card-img" src="images/Disney-Hotstar.png" alt="Card 1 Image">
+                        </a>
+                        <div class="card-text">
+                            <h3>Disney Hotstar</h3>
+                            <p>Live-Sports</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <a href="server.html">
+                            <img class="card-img" src="images/jiotv.png" alt="Card 2 Image">
+                        </a>
+                        <div class="card-text">
+                            <h3><a href="server.html">Jio Sports</a></h3>
+                            <p>Go live</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="server.html">
+                            <img class="card-img" src="images/max.jpg" alt="Card 2 Image">
+                        </a>
+                        <div class="card-text">
+                            <h3><a href="server.html">Sony Max</a></h3>
+                            <p>Go live</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="server.html">
+                            <img class="card-img" src="images/cn.png" alt="Card 2 Image">
+                        </a>
+                        <div class="card-text">
+                            <h3><a href="server.html">CN</a></h3>
+                            <p>Go live</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a href="server.html">
+                            <img class="card-img" src="images/images.jpeg" alt="Card 1 Image">
+                        </a>
+                        <div class="card-text">
+                            <h3><a href="server.html">ESPN</a></h3>
+                            <p>Go live</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a href="server.html">
+                            <img class="card-img" src="images/fox2.jpeg" alt="Card 1 Image">
+                        </a>
+                        <div class="card-text">
+                            <h3><a href="server.html">Fox</a></h3>
+                            <p>Go live</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!----------------------------------------------------------------------->
+                <div class="first-header">
+                    <div class="description-bar">
+                        <h2>News Channels</h2>
+                    </div>
+
+                    <!-- Forward and Reverse Buttons -->
+                    <div class="control-buttons">
+                        <button class="control-button">&lt;</button>
+                        <button class="control-button">&gt;</button>
+                    </div>
+                </div>
+                <!-- Card Container 2-->
+                <div class="card-container">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <a href="server.html">
+                            <img class="card-img" src="images/zee.jpeg" alt="Card 1 Image">
+                        </a>
+                        <div class="card-text">
+                            <h3><a href="server.html">Zee Tv</a></h3>
+                            <p>Go live</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a href="server.html">
+                            <img class="card-img" src="images/zee.jpeg" alt="Card 1 Image">
+                        </a>
+                        <div class="card-text">
+                            <h3><a href="server.html">Zee Tv</a></h3>
+                            <p>Go live</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <a href="server.html">
+                            <img class="card-img" src="images/zee.jpeg" alt="Card 1 Image">
+                        </a>
+                        <div class="card-text">
+                            <h3><a href="server.html">Zee Tv</a></h3>
+                            <p>Go live</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a href="server.html">
+                            <img class="card-img" src="images/zee.jpeg" alt="Card 1 Image">
+                        </a>
+                        <div class="card-text">
+                            <h3><a href="server.html">Zee Tv</a></h3>
+                            <p>Go live</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a href="server.html">
+                            <img class="card-img" src="images/zee.jpeg" alt="Card 1 Image">
+                        </a>
+                        <div class="card-text">
+                            <h3><a href="server.html">Zee Tv</a></h3>
+                            <p>Go live</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a href="server.html">
+                            <img class="card-img" src="images/zee.jpeg" alt="Card 1 Image">
+                        </a>
+                        <div class="card-text">
+                            <h3><a href="server.html">Zee Tv</a></h3>
+                            <p>Go live</p>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+
+            <footer>
+                <div class="rules">
+                    <p><a href="privacy.html">Privacy Policy </a></p>
+                    <p><a href="dcma.html"> DCMA </a></p>
+                    <p><a href="terms.html"> Terms & Conditions</p>
+                </div>
+                &copy; 2023 Movise Hub. All Rights Reserved.
+            </footer>
+        </main>
+    </header>
+
+    <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
